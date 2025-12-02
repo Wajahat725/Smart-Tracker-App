@@ -1,21 +1,65 @@
-# Tracker App
+SmartTracker - Flutter Mobile Application
+📱 Project Overview
+SmartTracker is a cross-platform Flutter application that integrates mobile device sensors (GPS, Camera) with a REST API backend. The app allows users to track their live location, capture images, and sync activity logs in real-time.
 
-A new Flutter project.
+✨ Features
+Live Location Tracking: Real-time GPS tracking with embedded maps
 
-## Demo
+Camera Integration: Capture images and attach them to activities
 
-<img src="1.png" alt="Description" style="width:50%; height:auto;">
+REST API Sync: Automatic synchronization with remote backend
 
+Offline Storage: Stores recent 5 activities locally for quick access
 
-## Getting Started
+Activity History: View, search, and delete logged activities
 
-This project is a starting point for a Flutter application.
+Responsive UI: Works on both phones and tablets
 
-A few resources to get you started if this is your first Flutter project:
+🛠️ Technologies Used
+Flutter & Dart - Cross-platform framework
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Provider - State management
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+REST API - Node.js/Express backend
+
+Google Maps - Location visualization
+
+Geolocator - GPS services
+
+Camera - Device camera access
+
+SharedPreferences - Local storage
+
+📁 Project Structure
+text
+lib/
+├── models/          # Data models
+├── services/        # API, Location, Camera services
+├── providers/       # State management
+├── screens/         # UI screens
+└── widgets/         # Reusable components
+🚀 Getting Started
+Prerequisites
+Flutter SDK (>= 3.0.0)
+
+Dart (>= 3.0.0)
+
+Android Studio/VSCode
+
+Google Maps API Key (for maps feature)
+
+Installation
+Clone the repository
+
+bash
+git clone <repository-url>
+cd smart_tracker
+Install dependencies
+
+bash
+flutter pub get
+Add API configuration
+
+Add Google Maps API key to AndroidManifest.xml
+
+Update API base URL in api_service.dart
